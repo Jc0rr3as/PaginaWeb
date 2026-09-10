@@ -24,7 +24,7 @@ public class menu {
                     paginas = m.Retroceder(paginas);
                     break;
                 case 3:
-                    // Mostrar páginas
+                    m.mostrar(paginas);
                     break;
                 case 4:
                     System.out.println("Vuelva Pronto");

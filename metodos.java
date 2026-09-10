@@ -37,12 +37,15 @@ public class metodos {
             System.out.println("No hay páginas para retroceder.");
         }
         return paginas;
+    }
+
     public void mostrar(Stack<objPagina> paginas) {
         System.out.println("Registro de historial: ");
         for (objPagina pagina : paginas) {
             System.out.println("Pagina: " + pagina.getTitulo());
             System.out.println("URL: " + pagina.getUrl());
             System.out.println("Fecha de acceso: " + pagina.getFechaAcceso());
+            System.out.println("---------------------------");
         }
     }
 }
