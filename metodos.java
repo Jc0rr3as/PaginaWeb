@@ -27,6 +27,16 @@ public class metodos {
         return paginas;
     }
 
+    public Stack<objPagina> Retroceder(Stack<objPagina> paginas) {
+        if (!paginas.isEmpty()) {
+            paginas.pop();
+            objPagina paginaActual = paginas.peek();
+            // objPagina paginaActual = paginas.pop();
+            System.out.println("Página actual: " + paginaActual.getTitulo());
+        } else {
+            System.out.println("No hay páginas para retroceder.");
+        }
+        return paginas;
     public void mostrar(Stack<objPagina> paginas) {
         System.out.println("Registro de historial: ");
         for (objPagina pagina : paginas) {
