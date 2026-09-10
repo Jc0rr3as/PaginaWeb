@@ -1,4 +1,4 @@
-public class objPagina{
+public class objPagina {
     private String url;
     private String titulo;
     private String fechaAcceso;

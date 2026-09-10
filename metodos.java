@@ -1,9 +1,11 @@
 import java.util.Scanner;
 import java.util.Stack;
+
 public class metodos {
     Stack<objPagina> paginas = new Stack<>();
     Scanner sc = new Scanner(System.in);
-    public Stack<objPagina> registro(){
+
+    public Stack<objPagina> registro() {
         boolean continuar = true;
         while (continuar) {
             System.out.print("Ingrese la URL de la página: ");
@@ -23,5 +25,14 @@ public class metodos {
             }
         }
         return paginas;
+    }
+
+    public void mostrar(Stack<objPagina> paginas) {
+        System.out.println("Registro de historial: ");
+        for (objPagina pagina : paginas) {
+            System.out.println("Pagina: " + pagina.getTitulo());
+            System.out.println("URL: " + pagina.getUrl());
+            System.out.println("Fecha de acceso: " + pagina.getFechaAcceso());
+        }
     }
 }
